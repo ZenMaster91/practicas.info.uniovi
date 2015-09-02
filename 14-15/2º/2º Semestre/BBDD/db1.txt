@@ -1,0 +1,16 @@
+--SELECT distinct nombrech from coches where modelo != 'gtd';
+--SELECT nombrech from coches where nombrech NOT IN(Select nombrech from coches where modelo='gtd');
+/*(SELECT nombrech from coches) EXCEPT(Select nombrech from coches where modelo='gtd');*/
+--9 SELECT * from concesionarios;
+--10 SELECT cifm, dni from marcas, clientes WHERE marcas.ciudadm=clientes.ciudad;
+--11 SELECT codcoche from coches, distribucion, concesionarios where coches.codcoche=distribucion.codcoche
+--   AND distribucion.cifc=concesionarios.cifc AND concesionarios.ciudadc='barcelona';
+--12 SELECT codcoche from ventas, clientes, concesionarios where ventas.dni=clientes.dni
+--   AND ventas.cifc=concesionarios.cifc AND concesionarios.ciudadc='madrid' AND clientes.ciudad='madrid';
+
+--13 SELECT codcoche from ventas, clientes, concesionarios where ventas.dni=clientes.dni
+--   AND ventas.cifc=concesionarios.cifc AND clientes.ciudad=concesionarios.ciudadc;
+
+--14 SELECT distinct c1.nombrem,c2.nombrem from marcas c1, marcas c2 where c1.ciudadm=c2.ciudadm;
+
+SELECT * from clientes where 

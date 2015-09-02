@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;AVLNodeText&apos; to &apos;AVLNodeTest&apos;&#x0D;&#x0A;- Original project: &apos;Lab_6&apos;&#x0D;&#x0A;- Original element: &apos;AVLNodeText&apos;&#x0D;&#x0A;- Renamed element: &apos;AVLNodeTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AVLNodeText&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{AVLNodeText.java[AVLNodeText" matchStrategy="1" name="AVLNodeTest" qualified="false" references="true" similarDeclarations="false" stamp="1414593988792" textual="false" version="1.0"/>
+</session>

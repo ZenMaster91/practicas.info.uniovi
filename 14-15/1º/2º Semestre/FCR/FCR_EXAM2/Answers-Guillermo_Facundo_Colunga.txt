@@ -1,0 +1,66 @@
+File to answer the questions of the exam for Units 3, 4 and 5
+of Computer and Network Fundamentals
+
+===========
+EXERCISE 1
+===========
+
+Question 1
+----------
+movl r3, 17h
+movh r3, 45h
+mov r2, [r3]
+sub r3, r0, r1
+add r0, r3, r2
+
+Question 2
+----------
+0936h
+
+Question 3
+----------
+0000b
+
+===========
+EXERCISE 2
+===========
+
+Question 1
+----------
+push r2
+push r3
+call dadd
+
+Question 2
+----------
+push r6
+push r3
+mov r3, [r4]
+mov r4, r3
+push r5
+pop r5
+pop r3
+
+===========
+EXERCISE 3
+===========
+
+Question 2
+----------
+CMP R4, R3
+
+Question 3
+----------
+1124h
+
+
+
+
+
+
+
+
+
+
+
+Remember to rename this file as Answers-Your_Name_and_Surname-DNI.txt and then upload it to the Campus Virtual

@@ -1,0 +1,9 @@
+/*1SELECT * FROM marcas WHERE WHERE ciudad = 'barcelona';*/
+/*2SELECT * FROM clientes WHERE ciudad = 'madrid' AND APELLIDO = 'garcia';*/
+/*2SELECT * from clientes where ciudad = 'madrid' OR APELLIDO = 'garcia';*/
+/*3SELECT nombre, ciudad from clientes;*/
+/*4SELECT apellido from clientes Where ciudad = 'madrid';*/
+/*SELECT DISTINCT nombrem from marcas,coches,marco  WHERE marcas.cifm=marco.cifm AND marco.codcoche=coches.codcoche AND modelo='gtd';*/
+/*SELECT DISTINCT nombrem from marcas,marco,coches,ventas WHERE marcas.cifm=marco.cifm AND marco.codcoche=coches.codcoche AND coches.codcoche=ventas.codcoche AND color='rojo';*/
+/*SELECT nombrech from coches where modelo IN (SELECT modelo from coches WHERE nombrech='cordoba');*/ /*SELECT c2.nombrech FROM coches c1,coches c2 WHERE c1.modelo=c2.modelo AND c1.nombrech='cordoba';*/
+SELECT nombrech from coches where modedo='gtd';

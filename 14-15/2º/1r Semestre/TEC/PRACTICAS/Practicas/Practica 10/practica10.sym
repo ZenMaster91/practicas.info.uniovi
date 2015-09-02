@@ -1,0 +1,152 @@
+004     @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+005     lcd_control
+008     PSP_DATA
+008     lcd_datos
+015     CCP_1_LOW
+015     CCP_1
+015     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2_HIGH
+01B     CCP_2
+020     val
+021-024 temp
+025     limit
+026     @TRIS_C
+027-02A @FLT.P1
+027     lcd_init.i
+027-028 @ITOF.P1
+027     MAIN.@SCRATCH1
+028-02B @PRINTF_L32D_86FPFPF.P1
+028-02B @PRINTF_L32D_9600_62_63FPFPF.P2
+028     lcd_init.@SCRATCH1
+028     MAIN.@SCRATCH2
+029     MAIN.@SCRATCH3
+02A     MAIN.@SCRATCH4
+02B-02E @FLT.P1
+02B     MAIN.@SCRATCH5
+02C     @PRINTF_L32D_86FPFPF.P1
+02C     @PRINTF_L32D_9600_62_63FPFPF.P2
+02C     MAIN.@SCRATCH6
+02D     MAIN.@SCRATCH7
+02D     @PRINTF_L32D_86FPFPF.@SCRATCH1
+02D     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH1
+02E     MAIN.@SCRATCH8
+02E     @PRINTF_L32D_86FPFPF.@SCRATCH2
+02E     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH2
+02F-032 @DIVFF.P1
+02F     @FLT.@SCRATCH1
+02F     @PRINTF_L32D_86FPFPF.@SCRATCH3
+02F     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH3
+030     @FLT.@SCRATCH2
+030     @PRINTF_L32D_86FPFPF.@SCRATCH4
+030     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH4
+031     @PRINTF_L32D_86FPFPF.@SCRATCH5
+031     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH5
+032     @PRINTF_L32D_86FPFPF.@SCRATCH6
+032     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH6
+033-036 @DIVFF.P1
+033     @PRINTF_L32D_86FPFPF.@SCRATCH7
+033     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH7
+034     @PRINTF_L32D_86FPFPF.@SCRATCH8
+034     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH8
+035-038 @DIV3232.P1
+035-038 @MULFF.P2
+035-038 @FTOSD.P3
+035     lcd_putc.c
+036     lcd_gotoxy.x
+036     @delay_ms1.P1
+037     lcd_gotoxy.y
+037     @DIVFF.@SCRATCH1
+038     lcd_gotoxy.address
+038     @DIVFF.@SCRATCH2
+039-03C @DIV3232.P1
+039-03C @MULFF.P2
+039     lcd_gotoxy.@SCRATCH1
+039     @DIVFF.@SCRATCH3
+039     @FTOSD.@SCRATCH1
+03A     lcd_send_byte.address
+03A     @DIVFF.@SCRATCH4
+03B     lcd_send_byte.n
+03B     @DIVFF.@SCRATCH5
+03C     lcd_read_byte.low
+03C     lcd_send_byte.@SCRATCH1
+03C     @DIVFF.@SCRATCH6
+03D     lcd_read_byte.high
+03D     lcd_send_nibble.n
+03D     @MULFF.@SCRATCH1
+03D     @DIV3232.@SCRATCH1
+03E     lcd_read_byte.@SCRATCH1
+03E     @MULFF.@SCRATCH2
+03E     @DIV3232.@SCRATCH2
+03F     @MULFF.@SCRATCH3
+03F     @DIV3232.@SCRATCH3
+040     @MULFF.@SCRATCH4
+040     @DIV3232.@SCRATCH4
+041     @MULFF.@SCRATCH5
+041     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+085     tris_lcd_control
+088     tris_lcd_datos
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+001C  @delay_ms1
+0004  LCD_INIT_STRING
+003E  lcd_read_byte
+0031  lcd_send_nibble
+003D  lcd_send_byte
+0077  lcd_init
+025B  lcd_gotoxy
+0244  lcd_putc
+0476  MAIN
+00A5  @ITOF
+00C2  @MULFF
+0137  @DIVFF
+0203  @FLT
+000C  @const109
+0279  @FTOSD
+0298  @DIV3232
+02DA  @PRINTF_L32D_86FPFPF
+03A6  @PRINTF_L32D_9600_62_63FPFPF
+0476  @cinit
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Documents and Settings\Propietario\Escritorio\Practica 10\
+
+Project Files:
+    practica10.c
+    practica10.h
+    ..\..\..\..\Archivos de programa\PICC\devices\16F877.h
+    ..\..\..\..\Archivos de programa\PICC\drivers\LCD_M.C
+
+Units:
+    C:\Documents and Settings\Propietario\Escritorio\Practica 10\practica10.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      practica10.err
+    Ext Symbols: practica10.esym
+    INHX8:       practica10.hex
+    Symbols:     practica10.sym
+    List:        practica10.lst
+    Debug/COFF:  practica10.cof
+    Project:     practica10.PJT
+    Call Tree:   practica10.tre
+    Statistics:  practica10.sta

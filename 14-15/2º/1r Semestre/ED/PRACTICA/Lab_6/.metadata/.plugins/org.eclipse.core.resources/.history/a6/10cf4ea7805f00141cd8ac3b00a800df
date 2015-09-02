@@ -1,0 +1,24 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class AVLTreeTest {
+
+	// Example.
+	AVLTree<char> a = new AVLTree<char>
+
+	a.add('b');
+	assertEquals("b(0)--", a.toString());
+	a.add('a');
+	assertEquals ("b(0)a(0)---", a.toString());
+	a.add('c');
+	assertEquals ("b(0)a(0)--c(0)--", a.toString());
+
+	@Test
+	public void toStringTest() {
+		//To be implemented.
+	}
+
+	
+}

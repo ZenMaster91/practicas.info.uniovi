@@ -1,0 +1,22 @@
+ORIGEN 0500h
+INICIO main
+
+.DATOS
+char '#';Some error will appear...
+
+.CODIGO
+main: 
+movh r0, D0
+movl r0, 00
+movh r2, BYTEALTO DIRECCION char;
+movl r2, BYTEBAJO DIRECCION char;
+mov r3, [r2]; char in r3.
+
+xor r1, r1, r1; re-setting r1 to all 0.
+movh r1, 07h ; black background, white foreground
+
+mov [r0], r3; printing one character just testing...
+
+
+FIN
+

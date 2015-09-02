@@ -1,0 +1,6 @@
+F:\2º SEMESTRE\fcr_prac_1\fcr_prac_1\bin\Debug\fcr_prac_1.exe.config
+F:\2º SEMESTRE\fcr_prac_1\fcr_prac_1\bin\Debug\fcr_prac_1.exe
+F:\2º SEMESTRE\fcr_prac_1\fcr_prac_1\bin\Debug\fcr_prac_1.pdb
+F:\2º SEMESTRE\fcr_prac_1\fcr_prac_1\obj\Debug\fcr_prac_1.csprojResolveAssemblyReference.cache
+F:\2º SEMESTRE\fcr_prac_1\fcr_prac_1\obj\Debug\fcr_prac_1.exe
+F:\2º SEMESTRE\fcr_prac_1\fcr_prac_1\obj\Debug\fcr_prac_1.pdb

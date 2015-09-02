@@ -1,0 +1,104 @@
+import javax.swing.text.Element;
+
+
+public class AVLNode <T> {
+
+	private T element;
+	private AVLNode<T> left;
+	private AVLNode<T> right;
+	private int height;
+	
+	public AVLNode (T element)
+	{
+		setElement( element);
+	}
+	
+	public AVLNode (T element, AVLNode<T> left, AVLNode<T> right)
+	{
+		setElement( element);
+		setLeft( left);
+		setRight( right);
+	}
+	
+	
+	//SETTERS AND GETTERS
+	/**
+	 * Getter. Returns the element.
+	 * 
+	 * @return the T element.
+	 */
+	private T getElement()
+	{
+		return element;
+	}
+	
+	/**
+	 * Setter. Sets the value for the element.
+	 * 
+	 * @param Element e to be set.
+	 */
+	private void setElement(T element2)
+	{
+		this.element = (T) element2;
+	}
+	
+	/**
+	 * Getter. Returns the left node.
+	 * 
+	 * @return the AVLNode<T> left node.
+	 */
+	private AVLNode<T> getLeft()
+	{
+		return left;
+	}
+	
+	/**
+	 * Setter.
+	 * 
+	 * @param e
+	 */
+	private void setLeft(AVLNode<T> e)
+	{
+		this.left = e;
+	}
+	
+	/**
+	 * Getter. Returns the right node.
+	 * 
+	 * @return the AVLNode<T> right node.
+	 */
+	private AVLNode<T> getRight()
+	{
+		return right;
+	}
+	
+	/**
+	 * Setter
+	 * 
+	 * @param e
+	 */
+	private void setRight(AVLNode<T> e)
+	{
+		this.right = e;
+	}
+	
+	/**
+	 * Getter. Returns the height of the tree.
+	 * 
+	 * @return the int height of the tree.
+	 */
+	private int getHeight()
+	{
+		return height;
+	}
+	
+	/**
+	 * Setter
+	 * 
+	 * @param h
+	 */
+	private void setHeight(int h)
+	{
+		this.height = h;
+	}
+}

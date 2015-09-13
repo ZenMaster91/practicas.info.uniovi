@@ -2,27 +2,27 @@
 public class AVLTree <T extends Comparable<T>>
 {
 	private AVLNode<T> root;
-	
+
 	public AVLTree()
 	{
 		setRoot(null);
 	}
-	
+
 	public AVLNode<T> getRoot()
 	{
 		return root;
 	}
-	
+
 	public void setRoot(AVLNode<T> root)
 	{
 		this.root = root;
 	}
-	
+
 	public void add (T element) throws Exception
 	{
 		root = add(root, element);
 	}
-	
+
 	private AVLNode<T> add(AVLNode<T> root, T element) throws Exception
 	{
 		if( getRoot() == null ) {
@@ -37,26 +37,26 @@ public class AVLTree <T extends Comparable<T>>
 			root.setRight(add(root.getRight(), element));
 		} return getRoot(); //.updateHeight();
 	}
-	
+
 	/**
 	 * Public toString method.
-	 * 
+	 *
 	 * @return toString private and recursive method
 	 */
 	public String toString()
 	{
 		return toString(root);
 	}
-	
+
 	/**
 	 * toString private recursive method.
-	 * 
+	 *
 	 * @param root
 	 * @return null if root = null. Otherwise: "root+left+right".
 	 */
 	private String toString(AVLNode<T> root)
 	{
-		if( getRoot() == null ) { 
+		if( getRoot() == null ) {
 			return "-";
 		} else {
 			return root.toString() + toString(root.getLeft()) + toString(root.getRight());

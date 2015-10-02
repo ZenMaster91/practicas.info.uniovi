@@ -46,7 +46,7 @@ public class VentanaRegistro extends JFrame {
 				}
 			}
 		});
-	}
+	} 
 
 	/**
 	 * Create the frame.
@@ -63,24 +63,31 @@ public class VentanaRegistro extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
-		lblNombre.setBounds(20, 25, 46, 14);
+		lblNombre.setBounds(20, 25, 58, 14);
 		contentPane.add(lblNombre);
 		
 		JLabel lblApellidos = new JLabel("Apellidos:");
-		lblApellidos.setBounds(257, 25, 46, 14);
+		lblApellidos.setBounds(257, 25, 78, 14);
 		contentPane.add(lblApellidos);
 		
 		txtName = new JTextField();
-		txtName.setBounds(63, 22, 144, 20);
+		txtName.setBounds(90, 22, 144, 20);
 		contentPane.add(txtName);
 		txtName.setColumns(10);
 		
 		txtSurname = new JTextField();
-		txtSurname.setBounds(306, 22, 210, 20);
+		txtSurname.setBounds(347, 22, 210, 20);
 		contentPane.add(txtSurname);
 		txtSurname.setColumns(10);
 		contentPane.add(getBtnCancelar());
 		contentPane.add(getPanel());
+		
+		JButton btnAceptar = new JButton("Aceptar");
+		btnAceptar.setForeground(new Color(51, 153, 255));
+		btnAceptar.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btnAceptar.setBackground(Color.WHITE);
+		btnAceptar.setBounds(473, 218, 102, 33);
+		contentPane.add(btnAceptar);
 	}
 	private JButton getBtnCancelar() {
 		if (btnCancelar == null) {
@@ -93,7 +100,7 @@ public class VentanaRegistro extends JFrame {
 			btnCancelar.setFont(new Font("Tahoma", Font.PLAIN, 14));
 			btnCancelar.setForeground(new Color(51, 153, 255));
 			btnCancelar.setBackground(Color.WHITE);
-			btnCancelar.setBounds(414, 218, 102, 33);
+			btnCancelar.setBounds(359, 218, 102, 33);
 		}
 		return btnCancelar;
 	}
@@ -102,7 +109,7 @@ public class VentanaRegistro extends JFrame {
 			panel = new JPanel();
 			panel.setBackground(Color.WHITE);
 			panel.setBorder(new TitledBorder(null, "G\u00E9nero", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-			panel.setBounds(20, 53, 187, 73);
+			panel.setBounds(20, 72, 187, 73);
 			panel.setLayout(null);
 			
 			JRadioButton rdbtnHombre = new JRadioButton("Hombre");

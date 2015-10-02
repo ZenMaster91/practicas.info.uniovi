@@ -1,7 +1,6 @@
 package igu;
 
 import java.awt.Color;
-import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
 
 import javax.swing.JButton;
@@ -12,17 +11,17 @@ public class Ventana extends JFrame {
 
 	private JPanel panelPrincipal = null;
 	private JButton btAceptar = null;
-	
 	private static final long serialVersionUID = 1L;
 
-	public Ventana() throws HeadlessException {
+	public Ventana() throws HeadlessException
+	{
 		this.initialize();
 	}
 
 	private void initialize()
 	{
 		this.setSize(400, 300);
-		this.setTitle("My First Window"); 
+		this.setTitle("You're Awesome"); 
 		this.setLocationRelativeTo(null);
 		
 		panelPrincipal = new JPanel();
@@ -32,12 +31,13 @@ public class Ventana extends JFrame {
 		
 		btAceptar = new JButton();
 		btAceptar.setBounds(170, 220, 100, 30);
-		btAceptar.setText("Aceptar");
+		btAceptar.setText("Close");
 		
 		panelPrincipal.add(btAceptar);
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		Ventana ventana = new Ventana();
 		ventana.setVisible(true);
 	}
